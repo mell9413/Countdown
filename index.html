@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Countdown</title>
-    <center>
-    <script language="JavaScript">
-      TargetDate = "12/25/2017 00:00 UTC-0600";
-      CountActive = true;
-      CountStepper = -1;
-      LeadingZero = true;
-      DisplayFormat = "%%D%% Días, %%H%% Horas, %%M%% Minutos, %%S%% Segundos.";
-      FinishMessage = "Ha terminado la cuenta atrás";
-    </script>
-    <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js"></script>
-  </head>
-  <body>
-  </body>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Reloj con cuenta regresiva, JavaScript</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="clock">
+	<div>
+		<div class="container">
+				<div class="col-xl-4 col-xs-12 reloj">
+					<p id="quedan" class="time-rest">FALTAN:</p>
+					<div class="inline-block">
+						<h2 class="counter1" id="dias">00</h2>
+						<span class="pre block">días</span>
+					</div>
+					<div class="inline-block">
+						<h2 class="counter" id="horas">00</h2>
+						<span class="pre block">horas</span>
+					</div>
+					<div class="inline-block">
+						<h2 class="counter" id="min">00</h2>
+						<span class="pre block">min</span>
+					</div>
+					<div class="inline-block">
+						<h2 class="counter" id="seg">00</h2>
+						<span class="pre block">seg</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="count.js"></script>
+</body>
 </html>
