@@ -1,7 +1,7 @@
 $(document).onload(getTime());
 function getTime() {
 	now = new Date();
-	fecha = new Date("Dec 25 2017 00:00:00");
+	fecha = new Date("2016-08-09 23:46:48 UTC");
 	days = (fecha - now) / 1000 / 60 / 60 / 24;
 	daysRound = Math.floor(days);
 	hours = (fecha - now) / 1000 / 60 / 60 - (24 * daysRound);
@@ -12,8 +12,8 @@ function getTime() {
 	secondsRound = Math.round(seconds);
 	if (daysRound <= "-1") {
 		//   IMPORTANTE  //
-		//Si el conteo regresivo del script el valor de los días es mayor a -1 se para el script,
-		//ya que la fecha esperada se a cumplido, es necesaria este línea de código ya que si no se pone
+		//Si el conteo regresivo del script el valor de los días es mayor a -1 se para el script, 
+		//ya que la fecha esperada se a cumplido, es necesaria este línea de código ya que si no se pone 
 		//seguiria el conteo regresívo pero en valores negativos.
 	}
 	else{
@@ -24,3 +24,6 @@ function getTime() {
 	}
 	newtime = window.setTimeout("getTime();", 1000);
 }
+
+
+
