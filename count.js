@@ -24,3 +24,9 @@ function getTime() {
 	}
 	newtime = window.setTimeout("getTime();", 1000);
 }
+
+var run = require('browser-run');
+
+var browser = run();
+browser.pipe(process.stdout);
+browser.end('console.log(location); window.close()');
